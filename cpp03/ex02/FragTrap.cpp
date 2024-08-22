@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 19:07:02 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/03/11 22:35:08 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:01:16 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,11 +46,6 @@ FragTrap &FragTrap::operator=(const FragTrap &copy)
 	return (*this);
 }
 
-void FragTrap::attack(const std::string &target)
-{
-	ClapTrap::attack(target);
-}
-
 FragTrap::~FragTrap()
 {
 	std::cout << "FragTrap " << name << " is in self-destruct" << std::endl;
@@ -59,13 +54,4 @@ FragTrap::~FragTrap()
 void FragTrap::highFivesGuys()
 {
 	std::cout << "FragTrap " << name << " is asking for a high five yeah!!" << std::endl;
-}
-void FragTrap::takeDamage( unsigned int amount)
-{
-	ClapTrap::takeDamage(amount);
-}
-
-void FragTrap::beRepaired( unsigned int amount)
-{
-	ClapTrap::beRepaired(amount);
 }

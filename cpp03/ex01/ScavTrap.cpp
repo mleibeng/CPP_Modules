@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 14:16:19 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/07/01 23:54:42 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:14:00 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,13 +64,4 @@ ScavTrap::~ScavTrap()
 void ScavTrap::guardGate()
 {
 	std::cout << "ScavTrap " << name << " is now in Gate keeper mode" << std::endl;
-}
-void ScavTrap::takeDamage( unsigned int amount)
-{
-	ClapTrap::takeDamage(amount);
-}
-
-void ScavTrap::beRepaired( unsigned int amount)
-{
-	ClapTrap::beRepaired(amount);
 }

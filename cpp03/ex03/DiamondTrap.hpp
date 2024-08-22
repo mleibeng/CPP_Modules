@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 19:30:33 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/03/11 22:33:54 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:03:04 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,11 +29,6 @@ class DiamondTrap : public ScavTrap, public FragTrap
 	DiamondTrap &operator=(const DiamondTrap &copy);
 	~DiamondTrap();
 
-	void attack(const std::string &target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
-	void guardGate();
-	void highFivesGuys();
 	void whoAmI();
 };
 

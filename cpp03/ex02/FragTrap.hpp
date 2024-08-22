@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 19:20:06 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/03/11 22:37:17 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:01:21 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,9 +25,6 @@ class FragTrap : public virtual ClapTrap
 	FragTrap &operator=(const FragTrap &copy);
 	~FragTrap();
 
-	void attack(const std::string &target);
-	void takeDamage( unsigned int amount);
-	void beRepaired( unsigned int amount);
 	void highFivesGuys();
 };
 

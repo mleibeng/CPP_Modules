@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 19:30:35 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/07/02 00:58:55 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:02:58 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,6 @@ DiamondTrap::DiamondTrap(std::string name) : ClapTrap(name + "_clap_name"), Scav
 	this->EnergyPoints = ScavTrap::EnergyPoints;
 	this->AttackDamage = FragTrap::AttackDamage;
 	std::cout << "Diamond " << name << " called into existence" << std::endl;
-}
-
-void DiamondTrap::attack(const std::string &target)
-{
-	ScavTrap::attack(target);
 }
 
 DiamondTrap::~DiamondTrap()
@@ -57,23 +52,4 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &copy)
 void DiamondTrap::whoAmI()
 {
 	std::cout << "I am DiamondTrap " << this->name << " and  ClapTrap " << ClapTrap::name << " with " << this->HitPoints << "HP, " << this->EnergyPoints << "EP, and " << this->AttackDamage << " attack" << std::endl;
-}
-
-void DiamondTrap::guardGate()
-{
-	ScavTrap::guardGate();
-}
-
-void DiamondTrap::highFivesGuys()
-{
-	FragTrap::highFivesGuys();
-}
-void DiamondTrap::takeDamage( unsigned int amount)
-{
-	ClapTrap::takeDamage(amount);
-}
-
-void DiamondTrap::beRepaired( unsigned int amount)
-{
-	ClapTrap::beRepaired(amount);
 }

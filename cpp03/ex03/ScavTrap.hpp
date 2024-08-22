@@ -6,7 +6,7 @@
 /*   By: mleibeng <mleibeng@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/11 14:16:07 by mleibeng          #+#    #+#             */
-/*   Updated: 2024/07/02 00:47:18 by mleibeng         ###   ########.fr       */
+/*   Updated: 2024/08/22 17:05:00 by mleibeng         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,8 +26,6 @@ class ScavTrap : public virtual ClapTrap
 	~ScavTrap();
 
 	void attack(const std::string &target);
-	void takeDamage( unsigned int amount);
-	void beRepaired( unsigned int amount);
 	void guardGate();
 };
 
